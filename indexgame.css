@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-image: url("https://cdn.hipwallpaper.com/i/67/19/TXEAb1.jpg");
+   font-family: Arial, Helvetica, sans-serif;
+   -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+ background-image: url("https://worthplaying.com/review/dealornodeal/dealornodeal_logo.jpg");
+  background-position: center;
+  background-color: black;
+ max-width: 100%;
+   padding: 130px;
+  text-align: center;
+  font-size:  25px;
+  color: red;
+  border: 3px solid #555;
+  font-family: Impact;
+  background-repeat:no-repeat;
+}
+.bg {
+  background-image: url("background.png");
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+ul.a{
+list-style-type: circle; 
+
+}
+
+ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: white;
+  }
+
+p.a{
+  font-style: italic;
+}
+
+#small{
+color:  #ff6666;
+font-size: 20px;
+font-weight: bold;
+
+}
+
+#subheading {
+color:gold;
+font-size: 40px;
+font-weight: bold;
+border-bottom: 2px #bfbfbf solid;
+}
+/* Style the navigation bar */
+  #mainMenu ul{
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+#mainMenu a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#mainMenu li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+#mainMenu li:last-child {
+  border-bottom: none;
+}
+
+#mainMenu li a.active {
+  background-color: gold;
+  color: white;
+}
+
+#mainMenu a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 15%; /* Set the width of the sidebar */
+ /* Some padding */
+
+}
+.sideright {
+
+  flex: 20%; /* Set the width of the sidebar */
+   /* Some padding */
+}
+
+/* Main column */
+.main { 
+ /* Some padding */
+
+}
+
+/* card effect for post */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   border: 2px  #e6e6e6 solid;
+}
+
+
+img {
+  width:  300px;
+  height: 300px;
+  float: right;
+}
+
+div.container > nav > ul > li > div {
+    width: 100%;
+    margin-top: 13px;
+    padding: 25px;
+    position: absolute;
+    border-bottom: 1px #222222 solid;
+    background-color: #ffffff;
+}
+div.container > nav > ul > li > div > ul {
+    width: 200px;
+    border-left: 2px #555555 solid;
+}
+div.container > nav > ul > li > div > ul > li {
+padding: 3px;
+}
+div.container > nav > ul > li > div > h4 {
+    width: 242px;
+    color: #d60000;
+}
+div.container > nav > ul > li > div > ul > li > a {
+    color: #222222;
+    font-size: 12px;
+}
+div.container > nav > ul > li > div > ul > li > a:hover {
+    color: #d60000;
+}
+
+div ul{
+  display: inline-block;
+  vertical-align: top;
+
+}
+a{
+   font-size: 13pt;
+  text-decoration:none;
+  padding: 18px 18px;
+  border: 1px solid black;
+}
+
+a:hover {
+  color: red;
+}
+
+button {
+  padding:1rem;
+  background-color: gold;
+  margin:.5rem;
+  font-size:2rem;
+  border-radius:10px 10px 0px 0px;
+  box-shadow:0px 1px 5px;
+}
+button:hover {
+  cursor:pointer;
+  box-shadow:0px 1px 10px;
+  background:#eee;
+}
+#casesWrapper {
+  padding:1rem;
+  background:#fafafa;
+  border:1px solid;
+  box-shadow:0px 1px 10px;
+}

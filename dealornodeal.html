@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+<meta charset="UTF-8">
+  <title>
+    Deal or No Deal
+  </title>
+  <link rel="stylesheet" type="text/css" href="gameplay.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="DealorNoDeal.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+   <body lang="en-US"  onload="start()">
+  <div class="header">
+</div>
+<div class="bg">
+<div class="row">
+  <div class="side">
+    <div class="card">
+    <ul id="mainMenu">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="rules.html">Game Rules</a></li>
+  <li><a href="leaderboard.html">Leaderboard</a></li>
+</ul>
+  </div>
+</div>
+    <div class="main">
+    <div class="card">
+      <h1 id= "subheading"> Let's Play Deal or No Deal!!!!</h1>
+ <div>
+      <br>
+      <button onclick="myFunction(), theTurns()" value=1>1</button>
+      <button onclick="myFunction(), theTurns()" value=2>2</button>
+      <button onclick="myFunction(), theTurns()" value=3>3</button>
+      <button onclick="myFunction(), theTurns()" value=4>4</button>
+      <button onclick="myFunction(), theTurns()" value=5>5</button>
+    <br>
+      <button onclick="myFunction(), theTurns()" value=6>6</button>
+      <button onclick="myFunction(), theTurns()" value=7>7</button>
+      <button onclick="myFunction(), theTurns()" value=8>8</button>
+      <button onclick="myFunction(), theTurns()" value=9>9</button>
+      <button onclick="myFunction(), theTurns()" value=10>10</button>
+    <br>
+      <button onclick="myFunction(), theTurns()" value=11>11</button>
+      <button onclick="myFunction(), theTurns()" value=12>12</button>
+      <button onclick="myFunction(), theTurns()" value=13>13</button>
+      <button onclick="myFunction(), theTurns()" value=14>14</button>
+      <button onclick="myFunction(), theTurns()" value=15>15</button>
+    <br>
+      <button onclick="myFunction(), theTurns()" value=16>16</button>
+      <button onclick="myFunction(), theTurns()" value=17>17</button>
+      <button onclick="myFunction(), theTurns()" value=18>18</button>
+      <button onclick="myFunction(), theTurns()" value=19>19</button>
+      <button onclick="myFunction(), theTurns()" value=20>20</button>
+    <br>
+      <button onclick="myFunction(), theTurns()" value=21>21</button>
+      <button onclick="myFunction(), theTurns()" value=22>22</button>
+      <button onclick="myFunction(), theTurns()" value=23>23</button>
+      <button onclick="myFunction(), theTurns()" value=24>24</button>
+      <button onclick="myFunction(), theTurns()" value=25>25</button>
+    </div>
+    <h2 id=case> Case Value </h2>
+    <h3 id=message> Offer </h3>
+    <a class="Deal" id="Deal">Deal </a>
+    <a class="NoDeal" onclick="noDeal()" id="NoDeal"> No Deal</a>
+    </div>
+    <!--jquery -->
+      <script>
+        $("button").click(function()
+        {
+          $(this).hide(20, function()
+            {
+                $(this).remove();
+            });
+        });
+        $(function(){
+            $("button").click(function() {
+                var button_pressed;
+                button_pressed = $(this).val();
+                myFunction(button_pressed);
+            });
+        });
+      </script>
+  </div>
+ <div class="sideright"> 
+  <div class="card">
+      <p id=remain> Remain </p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</body>

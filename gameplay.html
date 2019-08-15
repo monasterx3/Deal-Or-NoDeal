@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+<meta charset="UTF-8">
+  <title>
+    Deal or No Deal
+  </title>
+  <link rel="stylesheet" type="text/css" href="gameplay.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="header">
+</div>
+<div class="bg">
+<div class="row">
+  <div class="column side">
+    <ul id="mainMenu">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="rules.html">Game Rules</a></li>
+  <li><a href="leaderboard.html">Leaderboard</a></li>
+</ul>
+  </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+      var xprizes = [ 0.01,1,5,10,25,50,75,100,200,300,400,500,750,1000,5000,10000,25000,50000,75000,100000,200000,300000,400000,500000,750000,1000000]; // liist of possible prizes.
+</script>
+    <script src="game.js"></script>
+    <div class="column middle">
+    <div class="card">
+<div class="width"><h1 class="text-center">Deal Or No Deal</h1>
+  <p class="available_prizes"></p>
+  <button type='button' class='btn btn-primary' onclick='setUpGame(xprizes)'>Start Game</button>
+  <button type='button' class='btn btn-primary' onclick='resetGame()'>Reset Game</button>
+</div>
+<div id="casesWrapper" class="width"></div>
+
+
+
+<div id="offerPane"class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bank Offer</h5>
+      </div>
+      <div class="modal-body" id="modalbody1">
+        <p>The offer from the banker is ...</p>
+        <h2 id="bank_offer"></h2>
+        <p class="available_prizes"></p>
+      </div>
+      <div class="modal-footer" id="mdf1">
+        <button type="button" class="btn btn-primary" onclick="deal()">Deal!</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No Deal!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="finalOfferPane" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Final Round</h5>
+      </div>
+      <div class="modal-body" id="modalbody2">
+        <p>The final offer from the banker is ...</p>
+        <h2 id="lastOffer"></h2>
+        <p>You can choose either the last available case, the offer from the banker, Or your case.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="finalPick(1)">Your Case</button>
+        <button type="button" class="btn btn-primary" onclick="finalPick(0)">Banker Offer</button>
+        <button type="button" class="btn btn-primary" onclick="finalPick(2)">Last Case</button>
+        <button type="button" class="btn btn-primary" onclick="setUpGame(xprizes)">Play Again</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

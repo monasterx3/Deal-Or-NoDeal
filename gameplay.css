@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-image: url("https://cdn.hipwallpaper.com/i/67/19/TXEAb1.jpg");
+   font-family: Arial, Helvetica, sans-serif;
+   -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  text-align: center;
+}
+img {
+  width:  300px;
+  height: 300px;
+  float: center;
+}
+
+/* Style the header */
+.header {
+ background-image: url("https://worthplaying.com/review/dealornodeal/dealornodeal_logo.jpg");
+  background-position: center;
+  background-color: black;
+ max-width: 100%;
+   padding: 130px;
+  text-align: center;
+  font-size:  25px;
+  color: red;
+  border: 3px solid #555;
+  font-family: Impact;
+  background-repeat:no-repeat;
+}
+.bg {
+  background-image: url("background.png");
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+ul.a{
+list-style-type: circle; 
+
+}
+
+ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: white;
+  }
+
+p.a{
+  font-style: italic;
+}
+
+#small{
+color:  #ff6666;
+font-size: 20px;
+font-weight: bold;
+
+}
+
+#subheading {
+color:gold;
+font-size: 40px;
+font-weight: bold;
+border-bottom: 2px #bfbfbf solid;
+}
+/* Style the navigation bar */
+  #mainMenu ul{
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+#mainMenu a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#mainMenu li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+#mainMenu li:last-child {
+  border-bottom: none;
+}
+
+#mainMenu li a.active {
+  background-color: gold;
+  color: white;
+}
+
+#mainMenu a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Creates columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+/* card effect for post */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   border: 2px  #e6e6e6 solid;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width:  300px;
+  height: 300px;
+  float: right;
+}
+
+div.container > nav > ul > li > div {
+    width: 100%;
+    margin-top: 13px;
+    padding: 25px;
+    position: absolute;
+    border-bottom: 1px #222222 solid;
+    background-color: #ffffff;
+}
+div.container > nav > ul > li > div > ul {
+    width: 200px;
+    border-left: 2px #555555 solid;
+}
+div.container > nav > ul > li > div > ul > li {
+padding: 3px;
+}
+div.container > nav > ul > li > div > h4 {
+    width: 242px;
+    color: #d60000;
+}
+div.container > nav > ul > li > div > ul > li > a {
+    color: #222222;
+    font-size: 12px;
+}
+div.container > nav > ul > li > div > ul > li > a:hover {
+    color: #d60000;
+}
+
+div ul{
+  display: inline-block;
+  vertical-align: top;
+
+}
+

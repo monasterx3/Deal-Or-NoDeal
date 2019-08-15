@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+<meta charset="UTF-8">
+	<title>
+		Deal or No Deal
+	</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="header">
+</div>
+<div class="bg">
+<div class="row">
+  <div class="column side">
+    <ul id="mainMenu">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="rules.html">Game Rules</a></li>
+  <li><a href="leaderboard.html">Leaderboard</a></li>
+</ul>
+  </div>
+  
+  <div class="column middle">
+  	<div class="card">
+      <h2 id="subheading">How to get started?</h2>   
+    <p> Please register below to start playing the game.  </p> 
+    <p>If you do not know how to play the game you can go the rules page to learn how to play.</p>
+	<p><form action="" method="post" id="frmLogin">
+	<div class="error-message"><?php if(isset($message)) { echo $message; } ?></div>	
+	<div class="field-group">
+		<div><label for="login">Username</label></div>
+		<div><input name="user_name" type="text" class="input-field"></div>
+	</div>
+	<div class="field-group">
+		<div><label for="password">Password</label></div>
+		<div><input name="password" type="password" class="input-field"> </div>
+	</div>
+	<div class="field-group">
+		<div><input type="submit" name="login" value="Login" class="form-submit-button"></span></div>
+	</div>       
+</form></p>
+
+    	</div>
+
+</div>
+ <div class="column side"> 
+</div>
+</div>
+  </div>
+</body>
+</html>
